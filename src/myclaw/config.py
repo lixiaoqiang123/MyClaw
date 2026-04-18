@@ -6,13 +6,14 @@ from typing import Optional
 
 class Config:
     """配置类"""
-    
+
     def __init__(self):
+        self.base_url: Optional[str] = os.getenv("BASE_URL")
         self.api_key: Optional[str] = os.getenv("OPENAI_API_KEY")
-        self.model_name: str = os.getenv("MODEL_NAME", "gpt-4")
+        self.model_name: str = os.getenv("MODEL_NAME", "glm-4.5-air")
         self.temperature: float = float(os.getenv("TEMPERATURE", "0.7"))
         self.max_tokens: int = int(os.getenv("MAX_TOKENS", "2000"))
-    
+
     def validate(self) -> bool:
         """验证配置是否完整"""
         if not self.api_key:

@@ -1,7 +1,7 @@
 <div align="center">
   <img src="assets/icon.jpg" alt="MyClaw" width="128" height="128">
   <h1>MyClaw</h1>
-  <p>🦁 AI Agent 学习练手项目</p>
+  <p>AI Agent 学习练手项目</p>
 </div>
 
 ---
